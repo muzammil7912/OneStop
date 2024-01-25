@@ -1,0 +1,122 @@
+.footer {
+  background: #1f1f1f;
+  padding: 3rem 0;
+  .block__inner {
+    position: relative;
+  }
+  &__top {
+    .block__inner {
+      border-bottom: 0.1rem solid #dddddd12;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      span {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.4rem;
+        height: 1.4rem;
+        background: $secondary-color;
+        border-radius: 50%;
+      }
+      li {
+        position: relative;
+
+        a {
+          color: #fff;
+          font-size: 9.2rem;
+          font-weight: 700;
+          letter-spacing: -0.276rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 8rem 0;
+    .block__inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 4rem;
+    }
+    &Box {
+      &logo {
+        a {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          img {
+            width: 6.2rem;
+          }
+          p {
+            font-family: 'Chillax-Semibold';
+            color: #f0f0f0;
+            font-size: 36px;
+            font-weight: 700;
+            text-transform: capitalize;
+            margin: 0;
+          }
+        }
+      }
+
+      .sddd {
+        color: #f0f0f0;
+        font-size: 2.4rem;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .h4 {
+        color: #f0f0f0;
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 4.35rem; /* 290% */
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+      .phones {
+        color: #f0f0f0;
+        font-size: 2.7rem;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+      .ema {
+        color: #f0f0f0;
+        font-size: 2.1rem;
+        font-weight: 500;
+        line-height: 4.35rem; /* 207.143% */
+        span {
+          color: #5a69e9;
+        }
+      }
+      ul {
+        li {
+          a {
+            color: #727272;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 4.35rem; /* 290% */
+            letter-spacing: 0.3rem;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+    &2 {
+      .block__inner {
+        padding: 4rem 0 0;
+        border-top: 0.1rem solid #343434;
+        text-align: right;
+
+        a {
+          color: #4d4d4d;
+          font-size: 1.5rem;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,200 @@
+.banner {
+  position: relative;
+
+  .img1 {
+    width: 100%;
+    // max-height: 100vh;
+    max-height: 66rem;
+    object-fit: cover;
+  }
+
+  &_ {
+    position: absolute;
+    top: 58%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    width: 80%;
+    justify-content: center;
+    margin: 0 auto;
+    &_left {
+      h1 {
+        color: #f0f0f0;
+        font-size: 8.2396rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        line-height: 0.8;
+        margin-bottom: 2rem;
+      }
+      ul {
+        li {
+          position: relative;
+          color: #fff;
+          font-size: 2rem;
+          font-style: italic;
+          font-weight: 400;
+          padding-left: 2rem;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1rem;
+            height: 1rem;
+            background: $secondary-color;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+    &_right {
+      position: relative;
+      .img2 {
+        width: 130%;
+        right: 13rem;
+        position: relative;
+      }
+      .img3 {
+        position: absolute;
+        width: 34rem;
+        left: 5rem;
+        top: -12rem;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.bannerContact {
+  position: relative;
+  z-index: 2;
+  .img1 {
+    width: 100%;
+    height: 100vh;
+    min-height: 70rem;
+  }
+  &_ {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    display: block;
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 10rem;
+
+    &_left {
+      width: 50%;
+      align-self: center; 
+      h1 {
+        color: #f0f0f0;
+        font-size: 11.5003rem;
+        font-weight: 700;
+        letter-spacing: -0.69rem;
+        text-transform: uppercase;
+        line-height: 0.8;
+      }
+      p {
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.45rem; /* 175% */
+        text-transform: capitalize;
+      }
+      .telcon {
+        color: #f0f0f0;
+        font-size: 2.7rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: block;
+      }
+      .emailcon {
+        color: #f0f0f0;
+        font-size: 2.1rem;
+        font-weight: 500;
+        span {
+          color: #5a69e9;
+        }
+      }
+    }
+
+    &_right {
+      position: relative;
+      width: 40%;
+      top: 26rem;
+      .img5 {
+        position: absolute;
+        left: -19%;
+        top: -13rem;
+        width: 27.2rem;
+      }
+      form {
+        background: $secondary-color;
+        border-radius: 1rem;
+        padding: 4rem;
+        position: relative;
+        z-index: 2;
+        .h4 {
+          color: #fff;
+          font-size: 4.5rem;
+          font-weight: 700;
+          letter-spacing: -0.27rem;
+          text-transform: uppercase;
+          line-height: 0.8;
+          margin-bottom: 2rem;
+        }
+      }
+      &Box {
+        input {
+          border-radius: 1rem;
+          background: #0012ab;
+          width: 100%;
+          height: 6rem;
+          padding: 1rem 2rem;
+          color: #fff;
+          border: 0.1rem solid transparent;
+        }
+        ::placeholder {
+          color: #6373ff;
+          font-size: 1.5rem;
+          font-weight: 400;
+          text-transform: capitalize;
+        }
+        textarea {
+          border-radius: 1rem;
+          background: #0012ab;
+          width: 100%;
+          color: #fff;
+          border: 0.1rem solid transparent;
+          outline: #5a69e9;
+          padding: 1rem 2rem;
+          height: 12rem;
+          resize: unset;
+        }
+        margin: 2rem 0;
+      }
+      &btn {
+        border-radius: 4rem;
+        background: #fff;
+        width: 70%;
+        margin: 0 auto;
+        padding: 1.5rem 2rem;
+        border: 0.1rem solid transparent;
+        display: block;
+        font-weight: 500;
+        font-size: 1.6rem;
+        letter-spacing: .256rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
