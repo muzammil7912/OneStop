@@ -1,11 +1,14 @@
 .header {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 1rem;
   width: 100%;
   padding: 2rem 0;
   z-index: 9;
+  transition: .3s;
   &.go-top {
+    position: fixed;
+    top: 0;
     background: #000;
   }
   .containers {
@@ -126,5 +129,15 @@
         }
       }
     }
+  }
+}
+
+
+.header{
+  &.fleet {
+    position: relative;
+    background: #000 url(../webImages/banners/background.webp) no-repeat;
+    background-size: cover;
+    top: 0;
   }
 }

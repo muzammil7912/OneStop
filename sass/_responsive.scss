@@ -91,7 +91,7 @@
         left: 0;
         transform: unset;
         order: 2;
-        margin: 2rem auto;
+        margin: 1rem auto;
         .img11 {
           width: 15.6rem;
           margin: 0 auto;
@@ -142,34 +142,41 @@
     &BOx {
       width: 100%;
       height: 16.3rem;
+      align-items: center;
+      display: flex;
 
       .h2 {
         width: 85%;
-        margin-left: auto;
+        margin: 0 auto;
         padding: 1rem;
+        font-size: 4.6rem;
+        color: #fff;
+        b {
+          display: block;
+        }
       }
     }
     &BOx1 {
       img {
         bottom: 0rem;
-        width: 27.7rem;
-        left: 2rem;
+        width: 22.6rem;
+        left: 13rem;
       }
     }
     &BOx2 {
       img {
-        bottom: 2rem;
-        left: 5rem;
-        width: 24.5rem;
+        bottom: 3.5rem;
+        left: 17rem;
+        width: 17rem;
       }
     }
     &BOx3 {
       img {
-        top: 0;
+        bottom: 0;
         width: auto;
         right: auto;
-        left: 2rem;
-        height: 100%;
+        right: 4rem;
+        height: 87%;
       }
     }
     &BOx4 {
@@ -692,6 +699,42 @@
   .yartcategories {
     &__top {
       grid-template-columns: 1fr;
+      
+      .dropdown {
+        display: block !important;
+        .btn-secondary {
+          color: #fff;
+          text-align: center;
+          font-weight: 500;
+          letter-spacing: 0.224rem;
+          text-transform: capitalize;
+          border-radius: 4rem;
+          background: $secondary-color;
+          transition: 0.4s;
+          padding: 1.6rem 5rem;
+          font-size: 1.4rem;
+          width: 100%;
+        }
+        .dropdown-menu {
+          display: none;
+          width: 100%;
+          &.show {
+            display: block;
+            
+          }
+          .dropdown-item {
+            border-color: transparent;
+            opacity: 1;
+            border-radius: 0;
+            border-bottom: .1rem solid #ddd;
+            padding: 0.9rem 2rem;
+            font-size: 1.4rem;
+          }
+        }
+      }
+      & &desktop {
+        display: none;
+      }
       ul {
         flex-wrap: wrap;
       }
