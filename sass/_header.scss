@@ -113,8 +113,17 @@
       border-radius: 50%;
       background: #f0f0f0;
       display: flex;
+      transition: .3s;
       img {
+        transition: .3s;
         width: 46%;
+      }
+      &:hover {
+        transform: rotate(360deg);
+        background: $secondary-color;
+        img {
+          filter: invert(1);
+        }
       }
     }
   }

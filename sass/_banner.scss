@@ -1,5 +1,10 @@
+.swiper-container {
+  overflow: hidden;
+}
+
 .banner {
   position: relative;
+  overflow: hidden;
 
   .img1 {
     width: 100%;

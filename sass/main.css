@@ -309,6 +309,7 @@ img {
   letter-spacing: 2.24px;
   text-transform: capitalize;
   padding: 1.2rem 3rem;
+  transition: 0.5s;
 }
 .btncustom:hover {
   background: #0A1FD2;
@@ -336,8 +337,13 @@ img {
   letter-spacing: 0.224rem;
 }
 
+.swiper-container {
+  overflow: hidden;
+}
+
 .banner {
   position: relative;
+  overflow: hidden;
 }
 .banner .img1 {
   width: 100%;
@@ -775,9 +781,18 @@ input, select {
   border-radius: 50%;
   background: #f0f0f0;
   display: flex;
+  transition: 0.3s;
 }
 .header__right-icon img {
+  transition: 0.3s;
   width: 46%;
+}
+.header__right-icon:hover {
+  transform: rotate(360deg);
+  background: #0A1FD2;
+}
+.header__right-icon:hover img {
+  filter: invert(1);
 }
 
 .containers {
@@ -795,11 +810,16 @@ input, select {
   min-height: 100vh;
 }
 
+.swiper-container {
+  margin: 1rem;
+}
+
 .banner1 .img1 {
   width: 100%;
-  height: 100vh;
+  height: 97vh;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 1rem;
 }
 .banner1__left {
   position: absolute;
@@ -809,6 +829,15 @@ input, select {
 }
 .banner1__left .img11 {
   width: 35rem;
+  animation: 5s linear infinite rotateimg;
+}
+@keyframes rotateimg {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .banner1__left- {
   position: absolute;
@@ -823,7 +852,7 @@ input, select {
 .banner1__right {
   position: absolute;
   bottom: 1rem;
-  right: 0;
+  right: 1rem;
   width: 50%;
   text-align: right;
 }
@@ -914,6 +943,15 @@ input, select {
   width: 12rem;
   top: -4rem;
   left: 2rem;
+  animation: 5s linear infinite rotateimg1;
+}
+@keyframes rotateimg1 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
 }
 .section3C dd {
   padding-left: 11rem;
@@ -925,6 +963,9 @@ input, select {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 8rem;
+}
+.section3__left img {
+  animation: 5s linear infinite rotateimg;
 }
 .section3__right p {
   color: #000;
@@ -959,6 +1000,10 @@ input, select {
   text-transform: capitalize;
   border-radius: 4rem;
   background: #0a1fd2;
+  transition: 0.4s;
+}
+.section3__right-btn:hover {
+  background: #010101;
 }
 
 .section4 {
@@ -972,6 +1017,15 @@ input, select {
   top: 0;
   z-index: 1;
   width: 27rem;
+  animation: 5s linear infinite rotateimg3;
+}
+@keyframes rotateimg3 {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2rem);
+  }
 }
 .section4_ {
   position: relative;
@@ -1046,6 +1100,12 @@ input, select {
   padding: 1.3rem 5rem;
   color: #0A1FD2;
   font-weight: 600;
+  transition: 0.5s;
+}
+.section5_Main .btn3:hover {
+  background: #0A1FD2;
+  color: #fff;
+  border-color: #fff;
 }
 .section5_Main__left p {
   line-height: 2.85rem; /* 178.125% */
@@ -1066,6 +1126,7 @@ input, select {
 }
 .section6 .img1 {
   width: 100%;
+  max-height: 50rem;
 }
 .section6_txt {
   position: absolute;
@@ -1086,6 +1147,7 @@ input, select {
 .section6_txt img {
   margin-top: 3rem;
   width: 13rem;
+  animation: 5s linear infinite rotateimg;
 }
 
 .section7 {
@@ -1188,6 +1250,9 @@ input, select {
 }
 .section8__right ul li__left img {
   width: 10rem;
+}
+.section8__right ul li .section8__right__left img {
+  animation: 5s linear infinite rotateimg;
 }
 .section8__right ul li .section8__right__right .h3 {
   color: #fff;
@@ -1319,6 +1384,9 @@ input, select {
   width: 10.7rem;
   height: 21.7rem;
   transition: 0.5s;
+}
+.section10MainBOx:hover {
+  background: rgba(148, 60, 26, 0.1803921569);
 }
 .section10MainBOx:hover .section10MainBOxB_ {
   width: 57%;
@@ -3361,6 +3429,10 @@ input, select {
 @media only screen and (max-width: 461px) {
   .banner__left ul li {
     font-size: 1.5rem;
+  }
+  .insurance .banner_ {
+    width: 90%;
+    top: 58%;
   }
   .yart4_ ul {
     grid-template-columns: 1fr;

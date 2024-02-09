@@ -9,6 +9,7 @@
     letter-spacing: 2.24px;
     text-transform: capitalize;
     padding: 1.2rem 3rem;
+    transition: .5s;
     &:hover {
       background: $secondary-color;
       color: #fff;
