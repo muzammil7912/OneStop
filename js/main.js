@@ -100,3 +100,38 @@ var Swipes = new Swiper(".swiper-container2", {
             // $('.logo_side_2').addClass('hide');
           }
         });
+
+
+        $(".sortbtn").click(function (e) {
+          e.preventDefault();
+          $(".sortbtn").removeClass("active");
+          $(this).addClass("active");
+        });
+
+        $(".carrentalfleet__leftBox-top span").click(function () {
+          $(this).toggleClass("active");
+          if ($(this).hasClass("active")) {
+            $(this)
+              .parent(".carrentalfleet__leftBox-top").next().css("maxHeight",$(this).parent(".carrentalfleet__leftBox-top").next().get(0).scrollHeight);
+          } else {
+            $(this).parent(".carrentalfleet__leftBox-top").next().css("maxHeight", 0);
+          }
+        });
+
+
+        var swiper3 = new Swiper(".mySwiper", {
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
+        var swiper4 = new Swiper(".mySwiper2", {
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: swiper3,
+          },
+        });

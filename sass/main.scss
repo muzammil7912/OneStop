@@ -27,7 +27,8 @@
   min-height: 100vh;
 }
 .swiper-container {
-  margin: 1rem;
+width: 98%;
+margin: 1rem auto;
 }
 // .banner {
 //   span.swiper-pagination-bullet {
@@ -851,4 +852,5 @@
 @import "./footer";
 @import "./innerPage";
 @import "./carrental";
+@import "./yartrental";
 @import "./responsive";

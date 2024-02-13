@@ -91,6 +91,8 @@
       background: #e6f3ff;
       border-radius: 2rem;
       border: 1px solid #42688a;
+      position: relative;
+      overflow: hidden;
       &-img {
         position: relative;
         z-index: 2;
@@ -99,6 +101,10 @@
           left: 0;
           position: relative;
           border-radius: 2rem;
+          transition: .3s;
+          &:hover {
+            filter: drop-shadow(2px 4px 6px #000);
+          }
         }
         .img2 {
           position: absolute;
@@ -109,7 +115,7 @@
         }
       }
       &-body {
-        padding: 4rem 3rem 4rem;
+        padding: 4rem 3rem 3rem;
         &ul {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -149,6 +155,41 @@
             padding: 0.3rem 1rem;
             border: 0.1rem solid #bdd5ec;
             border-radius: 2rem;
+            font-size: 1.3rem;
+          }
+        }
+        .brandlogo {
+          margin-top: 2rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &left {
+            padding: 1rem 2rem;
+            border-radius: 2rem;
+            background: #fff;
+            img {
+              width: 9.2rem;
+            }
+          }
+          &right {
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            padding: 1.6rem;
+            transition: .3s;
+            background: #fff;
+            img {
+              width: 100%;
+            }
+            &:hover {
+              transform: rotate(360deg);
+              background: $secondary-color;
+              img {
+                filter: brightness(100);
+              }
+            }
           }
         }
       }
@@ -206,6 +247,15 @@
         background: $secondary-color;
         padding: 1rem 5rem;
         text-transform: uppercase;
+        color: #fff;
+        transition: .3s;
+        border:2px solid $secondary-color;
+        font-weight: 600;
+        &:hover {
+          background: #fff;
+          color: #000;
+          border-color:$secondary-color;
+        }
       }
       ul {
         display: flex;
@@ -1255,5 +1305,13 @@
   }
 }
 
-.TrustedSection2 {
+.navigationss {
+  padding: 0 0 4rem;
+  a {
+    color: #000;
+  }
+  li {
+    font-weight: 500;
+    color: $secondary-color;
+  }
 }

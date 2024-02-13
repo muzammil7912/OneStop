@@ -26,6 +26,20 @@
     text-transform: uppercase;
     padding: 1rem 2rem;
   }
+  &-secondary {
+    display: block;
+    width: fit-content;
+    border-radius: 0.8rem;
+    background: $primary-color;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 1.2rem 2rem;
+    border: 1px solid #ffffff;
+    &:hover {
+      // ba
+    }
+  }
   &2 {
     border-radius: 4rem;
     background: $secondary-color;

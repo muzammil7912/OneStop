@@ -1016,6 +1016,71 @@
 
 }
 
+@media only screen and (max-width: 979px) {
+  .fleetbanner {
+    .container {
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+
+  }
+  .carrentalfleet {
+    &_ {
+      grid-template-columns: 1fr;
+    }
+  }
+  .navigationss {
+    padding: 1rem 0;
+  }
+  .sectionBrand {
+    &Main2 {
+      flex-wrap: wrap;
+      &__left {
+        width: 100%;
+        .mySwiper {
+          img {
+            height: 6rem;
+          }
+        }
+        .sectionBrandMain2__rightBox,
+        .sectionBrandMain2__rightBox2 {
+          display: block !important;
+          margin-top: 2rem;
+        }
+        .features {
+          width: 100%;
+    grid-template-columns: 1fr 1fr;
+    li {
+      border: unset;
+      &:not(:nth-child(2n)) {
+        border-right: 0.1rem solid #ddd;
+      }
+      &:not(:nth-last-child(-n + 2)) {
+        border-bottom: 1px solid #ddd;
+      }
+    }
+        }
+      }
+      &__right {
+        display: none;
+        &Boxr {
+          li {
+            p {
+              font-size: 1.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 461px) {
   .banner {
     &__left {
